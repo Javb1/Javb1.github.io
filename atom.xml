@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Plan A</title>
+  
+  
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2024-05-24T06:30:16.245Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>brandy</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo+Typora+github搭建的博客优雅的上传图片</title>
+    <link href="http://example.com/2024/05/24/Hexo-Typora-github%E6%90%AD%E5%BB%BA%E7%9A%84%E5%8D%9A%E5%AE%A2%E4%BC%98%E9%9B%85%E7%9A%84%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87/"/>
+    <id>http://example.com/2024/05/24/Hexo-Typora-github%E6%90%AD%E5%BB%BA%E7%9A%84%E5%8D%9A%E5%AE%A2%E4%BC%98%E9%9B%85%E7%9A%84%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87/</id>
+    <published>2024-05-24T05:46:15.000Z</published>
+    <updated>2024-05-24T06:30:16.245Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;在我们辛辛苦苦搭建了博客之后，发现成功搭建原来只是第一步，在写博客的过程中，发现图片粘贴到md文档了，但是上传后图片路径却不对了。在github.io的博客上面无法显示。因此此文章介绍了如何利用粘贴图片的方式，快速的完成博客内容而且图片还不会不显示。&lt;/p&gt;
+&lt;h3 id=&quot;版本介绍&quot;&gt;&lt;a href=&quot;#版本介绍&quot; class=&quot;headerlink&quot; title=&quot;版本介绍&quot;&gt;&lt;/a&gt;版本介绍&lt;/h3&gt;&lt;p&gt;各个插件或程序的版本&lt;/p&gt;
+&lt;p&gt;Hexo: 7.2.0&lt;/p&gt;
+&lt;p&gt;Typora: 0.9.95 (Windows)&lt;/p&gt;
+&lt;p&gt;Node.js: 20.9.0&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="博客配置" scheme="http://example.com/tags/%E5%8D%9A%E5%AE%A2%E9%85%8D%E7%BD%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>你好hexo</title>
+    <link href="http://example.com/2024/05/23/%E4%BD%A0%E5%A5%BDhexo/"/>
+    <id>http://example.com/2024/05/23/%E4%BD%A0%E5%A5%BDhexo/</id>
+    <published>2024-05-23T09:13:59.000Z</published>
+    <updated>2024-05-24T07:42:57.217Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;请输入密码查看文章，里面有大惊喜&quot;&gt;&lt;a href=&quot;#请输入密码查看文章，里面有大惊喜&quot; class=&quot;headerlink&quot; title=&quot;请输入密码查看文章，里面有大惊喜&quot;&gt;&lt;/a&gt;请输入密码查看文章，里面有大惊喜&lt;/h2&gt;</summary>
+    
+    
+    
+    <category term="加密文章" scheme="http://example.com/categories/%E5%8A%A0%E5%AF%86%E6%96%87%E7%AB%A0/"/>
+    
+    
+    <category term="加密文章" scheme="http://example.com/tags/%E5%8A%A0%E5%AF%86%E6%96%87%E7%AB%A0/"/>
+    
+  </entry>
+  
+</feed>
