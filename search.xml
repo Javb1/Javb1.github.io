@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>你好hexo</title>
+    <url>/2024/05/23/%E4%BD%A0%E5%A5%BDhexo/</url>
+    <content><![CDATA[<h2 id="请输入密码查看文章，里面有大惊喜"><a href="#请输入密码查看文章，里面有大惊喜" class="headerlink" title="请输入密码查看文章，里面有大惊喜"></a>请输入密码查看文章，里面有大惊喜</h2><span id="more"></span>
+
+
+
+
+
+<p>试出来了没，送你个弱口令漏洞</p>
+]]></content>
+      <categories>
+        <category>加密文章</category>
+      </categories>
+      <tags>
+        <tag>加密文章</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo+Typora+github搭建的博客优雅的上传图片</title>
     <url>/2024/05/24/Hexo-Typora-github%E6%90%AD%E5%BB%BA%E7%9A%84%E5%8D%9A%E5%AE%A2%E4%BC%98%E9%9B%85%E7%9A%84%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87/</url>
     <content><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>在我们辛辛苦苦搭建了博客之后，发现成功搭建原来只是第一步，在写博客的过程中，发现图片粘贴到md文档了，但是上传后图片路径却不对了。在github.io的博客上面无法显示。因此此文章介绍了如何利用粘贴图片的方式，快速的完成博客内容而且图片还不会不显示。</p>
@@ -27,21 +45,40 @@
       </tags>
   </entry>
   <entry>
-    <title>你好hexo</title>
-    <url>/2024/05/23/%E4%BD%A0%E5%A5%BDhexo/</url>
-    <content><![CDATA[<h2 id="请输入密码查看文章，里面有大惊喜"><a href="#请输入密码查看文章，里面有大惊喜" class="headerlink" title="请输入密码查看文章，里面有大惊喜"></a>请输入密码查看文章，里面有大惊喜</h2><span id="more"></span>
+    <title>利用本地的docker镜像安装ARL灯塔系统</title>
+    <url>/2024/05/25/%E5%88%A9%E7%94%A8%E6%9C%AC%E5%9C%B0%E7%9A%84docker%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85ARL%E7%81%AF%E5%A1%94%E7%B3%BB%E7%BB%9F/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>ARl前些日子痛苦下架了，身为一个资深的脚本小子，怎么能忍受没有灯塔系统使用呢。因此我把arl的docker镜像文件脱了下来。</p>
+<span id="more"></span>
 
+<p>我把它放在了网盘里<a href="https://pan.baidu.com/s/1QjyGcdyDBpA0ambtNCOwqQ">百度网盘链接</a></p>
+<p>提取码：g2rg</p>
+<p>下载下来后解压可以看到文件夹中有arl-docker.tar文件，这个就是arl的镜像文件</p>
+<p><img src="/2024/05/25/%E5%88%A9%E7%94%A8%E6%9C%AC%E5%9C%B0%E7%9A%84docker%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85ARL%E7%81%AF%E5%A1%94%E7%B3%BB%E7%BB%9F/image-20240525152909345.png" alt="image-20240525152909345"></p>
+<h2 id="利用Ubuntu来安装ARL"><a href="#利用Ubuntu来安装ARL" class="headerlink" title="利用Ubuntu来安装ARL"></a>利用Ubuntu来安装ARL</h2><p><em>docker部署镜像：</em></p>
+<p>docker load -i arl-docker.tar </p>
+<p><img src="/2024/05/25/%E5%88%A9%E7%94%A8%E6%9C%AC%E5%9C%B0%E7%9A%84docker%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85ARL%E7%81%AF%E5%A1%94%E7%B3%BB%E7%BB%9F/image-20240525153322242.png" alt="image-20240525153322242"></p>
+<p>docker images，查看部署情况：</p>
+<p><img src="/2024/05/25/%E5%88%A9%E7%94%A8%E6%9C%AC%E5%9C%B0%E7%9A%84docker%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85ARL%E7%81%AF%E5%A1%94%E7%B3%BB%E7%BB%9F/image-20240525153354070.png" alt="image-20240525153354070"></p>
+<p>docker tag 82 tophant&#x2F;arl:latest，将镜像名字更改为tophant&#x2F;arl:latest。（82为image id）</p>
+<p><img src="/2024/05/25/%E5%88%A9%E7%94%A8%E6%9C%AC%E5%9C%B0%E7%9A%84docker%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85ARL%E7%81%AF%E5%A1%94%E7%B3%BB%E7%BB%9F/image-20240525153459725.png" alt="image-20240525153459725"></p>
+<p>cd docker_arl   进入docker_arl目录</p>
+<p><img src="/2024/05/25/%E5%88%A9%E7%94%A8%E6%9C%AC%E5%9C%B0%E7%9A%84docker%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85ARL%E7%81%AF%E5%A1%94%E7%B3%BB%E7%BB%9F/image-20240525154048223.png" alt="image-20240525154048223"></p>
+<p>运行以下命令来手动创建arl_db卷 docker volume create –name&#x3D;arl_db</p>
+<p><img src="/2024/05/25/%E5%88%A9%E7%94%A8%E6%9C%AC%E5%9C%B0%E7%9A%84docker%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85ARL%E7%81%AF%E5%A1%94%E7%B3%BB%E7%BB%9F/image-20240525153625773.png" alt="image-20240525153625773"></p>
+<p>运行docker-compose up -d</p>
+<p><img src="/2024/05/25/%E5%88%A9%E7%94%A8%E6%9C%AC%E5%9C%B0%E7%9A%84docker%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85ARL%E7%81%AF%E5%A1%94%E7%B3%BB%E7%BB%9F/image-20240525153743677.png" alt="image-20240525153743677"></p>
+<p>访问灯塔网站,配置文件中的config-docker.yaml中已经将端口配置为50123：</p>
+<p><img src="/2024/05/25/%E5%88%A9%E7%94%A8%E6%9C%AC%E5%9C%B0%E7%9A%84docker%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85ARL%E7%81%AF%E5%A1%94%E7%B3%BB%E7%BB%9F/image-20240525153826630.png" alt="image-20240525153826630"></p>
+<p>默认密码admin&#x2F;arlpass</p>
+<p>如果密码不对需要修改，利用如下代码进行修改，下面的例子是将密码修改为admin123：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">docker exec -ti arl_mongodb mongo -u admin -p admin</span><br><span class="line">use arl</span><br><span class="line">db.user.drop()</span><br><span class="line">db.user.insert(&#123; username: &#x27;admin&#x27;,  password: hex_md5(&#x27;arlsalt!@#&#x27;+&#x27;admin123&#x27;) &#125;)</span><br></pre></td></tr></table></figure>
 
-
-
-
-<p>试出来了没，送你个弱口令漏洞</p>
 ]]></content>
       <categories>
-        <category>加密文章</category>
+        <category>工具</category>
       </categories>
       <tags>
-        <tag>加密文章</tag>
+        <tag>工具使用</tag>
       </tags>
   </entry>
 </search>
