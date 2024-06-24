@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-05-25T07:56:05.547Z</updated>
+  <updated>2024-06-24T09:12:05.349Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>浅谈RMI的基本使用</title>
+    <link href="http://example.com/2024/06/24/%E6%B5%85%E8%B0%88RMI%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/"/>
+    <id>http://example.com/2024/06/24/%E6%B5%85%E8%B0%88RMI%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</id>
+    <published>2024-06-24T07:43:02.000Z</published>
+    <updated>2024-06-24T09:12:05.349Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;RMI描述&quot;&gt;&lt;a href=&quot;#RMI描述&quot; class=&quot;headerlink&quot; title=&quot;RMI描述&quot;&gt;&lt;/a&gt;RMI描述&lt;/h2&gt;&lt;p&gt;RMI全称是Remote Method Invocation，远程方法调用。从这个名字就可以看出，他的目标和RPC其实是类似的，是让某个Java虚拟机上的对象调⽤用另⼀一个Java虚拟机中对象上的⽅方法，只不不过RMI是Java独有的⼀一种机制。&lt;/p&gt;
+&lt;h2 id=&quot;如何使用RMI&quot;&gt;&lt;a href=&quot;#如何使用RMI&quot; class=&quot;headerlink&quot; title=&quot;如何使用RMI&quot;&gt;&lt;/a&gt;如何使用RMI&lt;/h2&gt;&lt;h3 id=&quot;远程类&quot;&gt;&lt;a href=&quot;#远程类&quot; class=&quot;headerlink&quot; title=&quot;远程类&quot;&gt;&lt;/a&gt;远程类&lt;/h3&gt;&lt;p&gt;远程类需要包括接口以及实现类，下面是远程类的例子：&lt;/p&gt;
+&lt;p&gt;SayHello接口需要继承Remote,并且定义好我们要调用的方法：&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;package method;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;import java.rmi.Remote;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;import java.rmi.RemoteException;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;/**&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; * @author Tonny&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; * @version 2021.2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; * @date 2023/7/6 11:14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; */&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;public interface SayHello extends Remote &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    public String sayHello(String name) throws RemoteException;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="java安全" scheme="http://example.com/categories/java%E5%AE%89%E5%85%A8/"/>
+    
+    
+    <category term="java安全" scheme="http://example.com/tags/java%E5%AE%89%E5%85%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>利用本地的docker镜像安装ARL灯塔系统</title>
