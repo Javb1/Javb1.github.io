@@ -6,7 +6,7 @@
   <link href="http://www.planaaa.top/atom.xml" rel="self"/>
   
   <link href="http://www.planaaa.top/"/>
-  <updated>2025-03-13T01:36:25.602Z</updated>
+  <updated>2025-03-13T02:07:28.082Z</updated>
   <id>http://www.planaaa.top/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>网络安全应急响应流程标准化指南</title>
+    <link href="http://www.planaaa.top/2025/03/13/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E6%B5%81%E7%A8%8B%E6%A0%87%E5%87%86%E5%8C%96%E6%8C%87%E5%8D%97/"/>
+    <id>http://www.planaaa.top/2025/03/13/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E6%B5%81%E7%A8%8B%E6%A0%87%E5%87%86%E5%8C%96%E6%8C%87%E5%8D%97/</id>
+    <published>2025-03-13T01:59:24.000Z</published>
+    <updated>2025-03-13T02:07:28.082Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;0x01-应急响应核心阶段&quot;&gt;&lt;a href=&quot;#0x01-应急响应核心阶段&quot; class=&quot;headerlink&quot; title=&quot;0x01 应急响应核心阶段&quot;&gt;&lt;/a&gt;0x01 应急响应核心阶段&lt;/h2&gt;&lt;h3 id=&quot;1-准备阶段（Preparation）&quot;&gt;&lt;a href=&quot;#1-准备阶段（Preparation）&quot; class=&quot;headerlink&quot; title=&quot;1. 准备阶段（Preparation）&quot;&gt;&lt;/a&gt;1. 准备阶段（Preparation）&lt;/h3&gt;&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;graph TD&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    A[制定应急预案] --&amp;gt; B[组建IRT团队]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    B --&amp;gt; C[部署监控系统]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    C --&amp;gt; D[建立通信机制]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    D --&amp;gt; E[定期演练]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;关键行动清单&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;编制《安全事件分类分级标准》&lt;/li&gt;
+&lt;li&gt;部署EDR&amp;#x2F;XDR解决方案&lt;/li&gt;
+&lt;li&gt;配置SIEM日志集中管理（推荐ELK&amp;#x2F;Splunk）&lt;/li&gt;
+&lt;li&gt;准备取证工具包（FTK Imager&amp;#x2F;Autopsy&amp;#x2F;Wireshark）&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="web安全" scheme="http://www.planaaa.top/categories/web%E5%AE%89%E5%85%A8/"/>
+    
+    
+    <category term="web安全" scheme="http://www.planaaa.top/tags/web%E5%AE%89%E5%85%A8/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Java Commons Collections反序列化漏洞链分析（CC1链）</title>
     <link href="http://www.planaaa.top/2025/03/13/Java-Commons-Collections%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E6%BC%8F%E6%B4%9E%E9%93%BE%E5%88%86%E6%9E%90%EF%BC%88CC1%E9%93%BE%EF%BC%89/"/>
     <id>http://www.planaaa.top/2025/03/13/Java-Commons-Collections%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E6%BC%8F%E6%B4%9E%E9%93%BE%E5%88%86%E6%9E%90%EF%BC%88CC1%E9%93%BE%EF%BC%89/</id>
     <published>2025-03-13T01:19:37.000Z</published>
-    <updated>2025-03-13T01:36:25.602Z</updated>
+    <updated>2025-03-13T01:55:25.300Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;0x00-漏洞概述&quot;&gt;&lt;a href=&quot;#0x00-漏洞概述&quot; class=&quot;headerlink&quot; title=&quot;0x00 漏洞概述&quot;&gt;&lt;/a&gt;0x00 漏洞概述&lt;/h2&gt;&lt;p&gt;Apache Commons Collections是Java中广泛使用的基础库，2015年Gabriel Lawrence和Chris Frohoff在《Marshalling Pickles》报告中披露了该库存在的反序列化远程代码执行漏洞（CVE-2015-4852）。攻击者通过构造恶意序列化数据，可在目标服务器上执行任意命令。&lt;/p&gt;
