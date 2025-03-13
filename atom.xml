@@ -6,7 +6,7 @@
   <link href="http://www.planaaa.top/atom.xml" rel="self"/>
   
   <link href="http://www.planaaa.top/"/>
-  <updated>2025-03-13T01:34:35.726Z</updated>
+  <updated>2025-03-13T01:36:25.602Z</updated>
   <id>http://www.planaaa.top/</id>
   
   <author>
@@ -21,16 +21,19 @@
     <link href="http://www.planaaa.top/2025/03/13/Java-Commons-Collections%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E6%BC%8F%E6%B4%9E%E9%93%BE%E5%88%86%E6%9E%90%EF%BC%88CC1%E9%93%BE%EF%BC%89/"/>
     <id>http://www.planaaa.top/2025/03/13/Java-Commons-Collections%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E6%BC%8F%E6%B4%9E%E9%93%BE%E5%88%86%E6%9E%90%EF%BC%88CC1%E9%93%BE%EF%BC%89/</id>
     <published>2025-03-13T01:19:37.000Z</published>
-    <updated>2025-03-13T01:34:35.726Z</updated>
+    <updated>2025-03-13T01:36:25.602Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
+    <summary type="html">&lt;h2 id=&quot;0x00-漏洞概述&quot;&gt;&lt;a href=&quot;#0x00-漏洞概述&quot; class=&quot;headerlink&quot; title=&quot;0x00 漏洞概述&quot;&gt;&lt;/a&gt;0x00 漏洞概述&lt;/h2&gt;&lt;p&gt;Apache Commons Collections是Java中广泛使用的基础库，2015年Gabriel Lawrence和Chris Frohoff在《Marshalling Pickles》报告中披露了该库存在的反序列化远程代码执行漏洞（CVE-2015-4852）。攻击者通过构造恶意序列化数据，可在目标服务器上执行任意命令。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;影响版本&lt;/strong&gt;：Apache Commons Collections &amp;lt;&amp;#x3D; 3.2.1 &amp;#x2F; &amp;lt;&amp;#x3D; 4.0.0&lt;/p&gt;
+&lt;h2 id=&quot;0x01-漏洞原理&quot;&gt;&lt;a href=&quot;#0x01-漏洞原理&quot; class=&quot;headerlink&quot; title=&quot;0x01 漏洞原理&quot;&gt;&lt;/a&gt;0x01 漏洞原理&lt;/h2&gt;&lt;p&gt;Java反序列化漏洞的核心在于：当应用对不可信的序列化数据执行&lt;code&gt;readObject()&lt;/code&gt;反序列化操作时，攻击者通过构造特殊的对象关系链（Gadget Chain），触发恶意代码执行。&lt;/p&gt;
+&lt;p&gt;Commons Collections中以下关键类被利用：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;InvokerTransformer&lt;/code&gt;：实现反射方法调用&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ChainedTransformer&lt;/code&gt;：形成多级Transformer调用链&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;LazyMap/LazyMap.decorate&lt;/code&gt;：延迟执行机制&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AnnotationInvocationHandler&lt;/code&gt;：JDK代理触发点&lt;/li&gt;
+&lt;/ul&gt;</summary>
     
     
     

@@ -165,6 +165,8 @@
 <li><code>LazyMap/LazyMap.decorate</code>：延迟执行机制</li>
 <li><code>AnnotationInvocationHandler</code>：JDK代理触发点</li>
 </ul>
+<span id="more"></span>
+
 <h2 id="0x02-利用链分析"><a href="#0x02-利用链分析" class="headerlink" title="0x02 利用链分析"></a>0x02 利用链分析</h2><p>完整调用链如下：</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">ObjectInputStream.readObject()</span><br><span class="line">-&gt; AnnotationInvocationHandler.readObject()</span><br><span class="line">-&gt; memberValues.entrySet()</span><br><span class="line">-&gt; LazyMap.get()</span><br><span class="line">-&gt; ChainedTransformer.transform()</span><br><span class="line">-&gt; InvokerTransformer.transform()</span><br><span class="line">-&gt; Runtime.exec()</span><br></pre></td></tr></table></figure>
 
